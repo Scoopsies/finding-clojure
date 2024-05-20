@@ -1,6 +1,6 @@
 ---
 title: Finding Clojure
 ---
-Hi I'm Scoops.\n
-This is my blog to document my journey learning Clojure \n
-through my apprenticeship with Clean Coders.
+Hi I'm Scoops.
+This is my blog documenting my journey learning to master coding, especially in Clojure
+through my apprenticeship at Clean Coders.

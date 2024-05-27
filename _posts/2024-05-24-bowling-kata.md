@@ -9,7 +9,7 @@ and forth has me second guessing every character I type. There are also tons of 
 need to learn. But I guess that really is the point of doing it over and over again.
 
 After our daily stand-up I watched two more Uncle Bob videos. This time they are on the subject of SOLID 
-design principles. The main principle I learned about this time is the Single Responsibility Principle. 
+design principles. The principle I learned about this time is the Single Responsibility Principle. 
 
 The Single Responsibility principle is philosophy in Object-Oriented Programming that says a class should 
 only be responsible for one piece of functionality. If a class has more than one responsibility those responsibilities

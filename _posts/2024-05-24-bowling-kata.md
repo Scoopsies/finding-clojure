@@ -1,6 +1,6 @@
 ---
-title: "Bowling Kata and Learning""
-date: 2024-05-27
+title: "Bowling Kata and Learning"
+date: 2024-05-24
 ---
 
 Today I started off with my Bowling Kata. It took me 45 minutes to get through which is far from my goal

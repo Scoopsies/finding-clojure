@@ -1,6 +1,6 @@
 ---
 title: "Estimates, and Katas, and Test Driven Development, Oh My!"
-date: 2024-05-21
+date: 2024-05-22
 ---
 
 Today I had my first IPM (Iterative Planning Meeting). In general, it is a weekly meeting you have with clients to see what features they would like prioritized for you to complete in the next week. Because I am an apprentice I don’t meet with actual clients. Instead, my mentors Alex and Micah act as my clients. They gave me a list of tasks they would like to see done. I then had to make estimates on how long it’d take to get each task done. To make the estimates I had to choose an estimate of an optimistic time to finish, a realistic time to finish, and a pessimistic time to finish. The estimate to the client is the average of those times. As we all know, time is a limited resource, so the client picks out tasks (called stories) that total up to 40 hours and puts them in a prioritized order for you to complete over the next week.

@@ -1,5 +1,5 @@
 ---
-title: "My First Time Facilitating Stand-up""
+title: "My First Time Facilitating Stand-up"
 date: 2024-06-10
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Google vs Oracle"
-date: 2024-06-13
+date: 2024-06-14
 ---
 
 I made a lot more progress on tic-tac-toe today. The best move function now checks for a win if one is available, takes it

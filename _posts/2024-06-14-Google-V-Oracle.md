@@ -1,5 +1,5 @@
 ---
-title: "History of Java"
+title: "Google vs Oracle"
 date: 2024-06-13
 ---
 

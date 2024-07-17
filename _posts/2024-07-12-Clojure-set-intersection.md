@@ -1,6 +1,6 @@
 ---
 title: "clojure.set/intersection"
-date: 2024-07-11
+date: 2024-07-12
 ---
 
 Today I finally got wa-tor done for the first time. I am no where close to having it commited to muscle memory

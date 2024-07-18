@@ -1,6 +1,6 @@
 ---
-title: "Multi Arity Multi Methods"
-date: 2024-07-15
+title: "Wa-tor Update"
+date: 2024-07-16
 ---
 
 I got a chance to meet with one of the craftsmen who also did Wa-tor as their kata today. They told me that Wa-tor

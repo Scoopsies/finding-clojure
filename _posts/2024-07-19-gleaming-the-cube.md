@@ -1,6 +1,6 @@
 ---
 title: "Gleaming the Cube"
-date: 2024-07-20
+date: 2024-07-19
 ---
 
 In my tic-tac-toe this week Alex challenged me to handle my checking for win conditions differently. Instead of how I

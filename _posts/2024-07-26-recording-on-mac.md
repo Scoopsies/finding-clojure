@@ -1,5 +1,5 @@
 ---
-title: "Tips for Making Videos on Mac"
+title: "Tips for Making Videos on MacOS"
 date: 2024-07-26
 ---
 

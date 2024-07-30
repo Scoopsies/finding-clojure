@@ -1,6 +1,6 @@
 ---
 title: "\"Unbeatable\" Tic-Tac-Toe Implementation"
-date: 2024-07-24
+date: 2024-07-25
 ---
 
 I spent a majority of my morning today trying to figure out how to implement my mini-max algorithm into 3x3x3

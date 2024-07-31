@@ -1,6 +1,6 @@
 ---
 title: "Defrecord"
-date: 2024-07-29
+date: 2024-07-30
 ---
 
 When working on my polymorphism presentation I learned that I did not have a firm grasp on records in clojure, which

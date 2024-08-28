@@ -1,6 +1,6 @@
 ---
 title: "FizzBuzz Kata"
-date: 2024-08-19
+date: 2024-08-26
 ---
 
 Majority of today was just working on editing my Java FizzBuzz Kata video. I'm getting a little better at editing, but

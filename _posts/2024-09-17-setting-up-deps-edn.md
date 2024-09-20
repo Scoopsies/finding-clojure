@@ -1,6 +1,6 @@
 ---
 title: "Key parts of deps.edn"
-date: 2024-09-16
+date: 2024-09-17
 ---
 
 Clojure’s deps.edn file is the heart of dependency management when using tools.deps. It defines your project’s 

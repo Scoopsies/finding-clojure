@@ -1,5 +1,5 @@
 ---
-title: ""
+title: "Decorator Pattern"
 date: 2024-09-23
 ---
 

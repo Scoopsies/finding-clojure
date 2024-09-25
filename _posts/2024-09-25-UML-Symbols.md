@@ -13,14 +13,14 @@ The class symbol is represented as a rectangle divided into three sections: the 
 middle section holds attributes (variables), and the bottom section lists methods (functions). It’s commonly used in 
 Class Diagrams to define the structure of a system.
 
-![Class UML](../images/UML-Class.png)
+![Class Symbol](/images/UML-Class.png)
 
 ### 2. Object
 
 Similar to the class symbol but with underlined text, the object symbol is used in object diagrams to represent an
 instance of a class, showing real-world examples of how objects interact.
 
-![Class UML](../images/UML-object.png)
+![Object Symbol](/images/UML-object.png)
 
 ### 3. Use Case
 
@@ -28,42 +28,42 @@ A use case symbol is depicted as an oval or ellipse and is used in Use Case Diag
 scenario where users interact with the system. Actors (stick figures) are connected to these ovals to represent who 
 performs each action.
 
-![Class UML](../images/UML-use-case.png)
+![Use Case Symbol](/images/UML-use-case.png)
 
 ### 4. Actor
 
 In Use Case Diagrams, an actor symbol is typically a stick figure that represents users or external systems interacting 
 with the system. Actors are linked to use cases to depict who initiates an action.
 
-![Class UML](../images/UML-actor.png)
+![Actor Symbol](/images/UML-actor.png)
 
 ### 5. Package
 
 The package symbol resembles a folder and is used in Package Diagrams to group related classes, components, or elements 
 into namespaces. It helps organize complex diagrams by showing how components are logically grouped.
 
-![Class UML](../images/UML-Package.png)
+![Package Symbol](/images/UML-Package.png)
 
 ### 6. Component
 
 A component symbol is drawn as a rectangle with two small rectangles on the side and is used in Component Diagrams to 
 represent a physical, replaceable part of a system, such as a service or database.
 
-![Class UML](../images/UML-component.png)
+![Component Symbol](/images/UML-component.png)
 
 ### 7. Activity
 
 The activity symbol, represented by a rounded rectangle, is used in Activity Diagrams to represent an action or task 
 that needs to be performed. These diagrams show the flow of control between activities.
 
-![Class UML](../images/UML-Activity.png)
+![Activity Symbol](/images/UML-Activity.png)
 
 ### 8. State
 
 A state symbol is a rounded rectangle used in State Diagrams to represent different states an object can be in. 
 Transitions between these states are shown using arrows.
 
-![Class UML](../images/UML-State.png)
+![State Symbol](/images/UML-State.png)
 
 These symbols form the backbone of UML, allowing system architects and developers to design, communicate, and understand 
 systems more effectively. Each symbol serves a distinct purpose, and mastering them helps in creating clear and 

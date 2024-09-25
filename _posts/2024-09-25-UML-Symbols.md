@@ -13,7 +13,7 @@ The class symbol is represented as a rectangle divided into three sections: the 
 middle section holds attributes (variables), and the bottom section lists methods (functions). It’s commonly used in 
 Class Diagrams to define the structure of a system.
 
-![Class Symbol](/images/UML-Class.png)
+![Class Symbol]({{ site.baseurl }}/images/UML-Class.png)
 
 ### 2. Object
 

@@ -1,6 +1,6 @@
 ---
 title: "Basic UML symbols"
-date: 2024-09-23
+date: 2024-09-25
 ---
 
 Yesterday's post about [UML diagrams](https://scoopsies.github.io/finding-clojure/2024/09/23/What-is-a-UML.html) introduced us to why UML diagrams are useful, but knowing how something is useful

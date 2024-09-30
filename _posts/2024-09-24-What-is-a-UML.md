@@ -1,6 +1,6 @@
 ---
 title: "What is a UML?"
-date: 2024-09-23
+date: 2024-09-24
 ---
 
 I've recently come to the conclusion that UML diagrams only make sense to me on a basic level. I can see relationships

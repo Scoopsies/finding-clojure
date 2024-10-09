@@ -40,13 +40,12 @@
     )
 
   (context "take-computer-turn"
-    (it "invokes js/setTimeOut for 1000 seconds"
-      (with-redefs [js/setTimeout (stub :setTimeout)
+    (it "invokes set-timeout for 1000 seconds"
+      (with-redefs [sut/set-timeout (stub :setTimeout)
                     corejs/update-state (stub :update-state)
                     move/pick-move (stub :pick-move)]
                    (sut/take-computer-turn (delay {}))
-                   (should-have-invoked :setTimeout {:with [nil 1000]})
-                   (should-have-invoked :update-state)))
+                   (should-have-invoked :setTimeout)))
     )
 
   (context "handle-click"

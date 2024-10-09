@@ -3,12 +3,12 @@ goog.provide('tic_tac_toe.moves.replayc');
 goog.require('cljs.core');
 goog.require('tic_tac_toe.moves.corec');
 tic_tac_toe.moves.replayc.thread_sleep = (function tic_tac_toe$moves$replayc$thread_sleep(){
-return Thread.sleep((1000));
+return null;
 });
-tic_tac_toe.moves.replayc.get_replay_move = (function tic_tac_toe$moves$replayc$get_replay_move(p__6737){
-var map__6738 = p__6737;
-var map__6738__$1 = cljs.core.__destructure_map.call(null,map__6738);
-var replay_moves = cljs.core.get.call(null,map__6738__$1,new cljs.core.Keyword(null,"replay-moves","replay-moves",1560924210));
+tic_tac_toe.moves.replayc.get_replay_move = (function tic_tac_toe$moves$replayc$get_replay_move(p__6836){
+var map__6837 = p__6836;
+var map__6837__$1 = cljs.core.__destructure_map.call(null,map__6837);
+var replay_moves = cljs.core.get.call(null,map__6837__$1,new cljs.core.Keyword(null,"replay-moves","replay-moves",1560924210));
 tic_tac_toe.moves.replayc.thread_sleep.call(null);
 
 return cljs.core.first.call(null,replay_moves);

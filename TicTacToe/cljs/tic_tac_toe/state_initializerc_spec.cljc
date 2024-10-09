@@ -1,5 +1,5 @@
 (ns tic-tac-toe.state-initializerc-spec
-  (:require [speclj.core :refer [describe with-stubs before context it should= should-not should should-have-invoked should-throw stub redefs-around after]]
+  (:require [speclj.core #?(:clj :refer :cljs :refer-macros) [describe with-stubs before context it should= should-not should should-have-invoked should-throw stub redefs-around after]]
             [tic-tac-toe.data.data-ioc :as data]
             [tic-tac-toe.printablesc :as printables]
             [tic-tac-toe.state-initializerc :as sut]))

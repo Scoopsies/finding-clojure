@@ -7,6 +7,10 @@ goog.require('reagent.dom');
 goog.require('tic_tac_toe.printablesc');
 goog.require('tic_tac_toe.menu');
 goog.require('tic_tac_toe.board');
+goog.require('tic_tac_toe.moves.easyc');
+goog.require('tic_tac_toe.moves.mediumc');
+goog.require('tic_tac_toe.moves.hardc');
+goog.require('tic_tac_toe.moves.replayc');
 tic_tac_toe.main.state = reagent.core.atom.call(null,new cljs.core.PersistentArrayMap(null, 1, [new cljs.core.Keyword(null,"printables","printables",1718670765),tic_tac_toe.printablesc.player_x_printables], null));
 tic_tac_toe.main.game_in_progress_QMARK_ = (function tic_tac_toe$main$game_in_progress_QMARK_(state){
 var and__5000__auto__ = new cljs.core.Keyword(null,"board","board",-1907017633).cljs$core$IFn$_invoke$arity$1(cljs.core.deref.call(null,state));

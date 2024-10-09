@@ -24,10 +24,11 @@
       (corejs/update-state (nth board n) state)
       nil)))
 
+(defn set-timeout [fn ms]
+  (js/setTimeout fn ms))
+
 (defn take-computer-turn [state]
-  (js/setTimeout
-    (corejs/update-state (move/pick-move @state) state)
-    1000))
+  (set-timeout #(corejs/update-state (move/pick-move @state) state) 1000))
 
 (defn render-board [state]
   (let [dref-state @state

@@ -5,12 +5,3 @@
             [speclj.core]
             [tic-tac-toe.play-gamec :as game]))
 
-#_(describe "corejs"
-  (with-stubs)
-  (context "update-state"
-    (it "calls reset!"
-      (with-redefs [reset! (fn [_ _] :reset!)
-                    game/get-next-state (stub :get-next-state {:return {}})]
-                   (sut/update-state 1 (delay {}))
-                   (should-have-invoked :get-next-state))))
-  )

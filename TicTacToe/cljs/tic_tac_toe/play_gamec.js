@@ -4,12 +4,6 @@ goog.require('cljs.core');
 goog.require('tic_tac_toe.boardc');
 goog.require('tic_tac_toe.data.data_ioc');
 goog.require('tic_tac_toe.printablesc');
-goog.require('tic_tac_toe.moves.corec');
-goog.require('tic_tac_toe.moves.easyc');
-goog.require('tic_tac_toe.moves.mediumc');
-goog.require('tic_tac_toe.moves.hardc');
-goog.require('tic_tac_toe.moves.human_movec');
-goog.require('tic_tac_toe.moves.replayc');
 tic_tac_toe.play_gamec.get_play_again = (function tic_tac_toe$play_gamec$get_play_again(state,selection){
 if(cljs.core._EQ_.call(null,selection,"1")){
 return new cljs.core.PersistentArrayMap(null, 3, [new cljs.core.Keyword(null,"ui","ui",-469653645),new cljs.core.Keyword(null,"ui","ui",-469653645).cljs$core$IFn$_invoke$arity$1(state),new cljs.core.Keyword(null,"printables","printables",1718670765),tic_tac_toe.printablesc.player_x_printables,new cljs.core.Keyword(null,"game-over?","game-over?",432859304),false], null);
@@ -96,10 +90,10 @@ return state;
 return cljs.core.assoc.call(null,updated_state,new cljs.core.Keyword(null,"printables","printables",1718670765),tic_tac_toe.printablesc.get_move_printables.call(null,new cljs.core.Keyword(null,"board","board",-1907017633).cljs$core$IFn$_invoke$arity$1(updated_state)));
 }
 });
-tic_tac_toe.play_gamec.update_move_order = (function tic_tac_toe$play_gamec$update_move_order(p__11377,selection){
-var map__11378 = p__11377;
-var map__11378__$1 = cljs.core.__destructure_map.call(null,map__11378);
-var move_order = cljs.core.get.call(null,map__11378__$1,new cljs.core.Keyword(null,"move-order","move-order",-792510441));
+tic_tac_toe.play_gamec.update_move_order = (function tic_tac_toe$play_gamec$update_move_order(p__11903,selection){
+var map__11904 = p__11903;
+var map__11904__$1 = cljs.core.__destructure_map.call(null,map__11904);
+var move_order = cljs.core.get.call(null,map__11904__$1,new cljs.core.Keyword(null,"move-order","move-order",-792510441));
 if(cljs.core.truth_(selection)){
 return cljs.core.vec.call(null,cljs.core.conj.call(null,move_order,selection));
 } else {
@@ -177,49 +171,5 @@ return tic_tac_toe.play_gamec.make_move.call(null,state,selection);
 }
 }
 });
-if((typeof tic_tac_toe !== 'undefined') && (typeof tic_tac_toe.play_gamec !== 'undefined') && (typeof tic_tac_toe.play_gamec.loop_game_play !== 'undefined')){
-} else {
-tic_tac_toe.play_gamec.loop_game_play = (function (){var method_table__5599__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var prefer_table__5600__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var method_cache__5601__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var cached_hierarchy__5602__auto__ = cljs.core.atom.call(null,cljs.core.PersistentArrayMap.EMPTY);
-var hierarchy__5603__auto__ = cljs.core.get.call(null,cljs.core.PersistentArrayMap.EMPTY,new cljs.core.Keyword(null,"hierarchy","hierarchy",-1053470341),cljs.core.get_global_hierarchy.call(null));
-return (new cljs.core.MultiFn(cljs.core.symbol.call(null,"tic-tac-toe.play-gamec","loop-game-play"),new cljs.core.Keyword(null,"ui","ui",-469653645),new cljs.core.Keyword(null,"default","default",-1987822328),hierarchy__5603__auto__,method_table__5599__auto__,prefer_table__5600__auto__,method_cache__5601__auto__,cached_hierarchy__5602__auto__));
-})();
-}
-tic_tac_toe.play_gamec.get_selection = (function tic_tac_toe$play_gamec$get_selection(state){
-if(cljs.core.truth_(new cljs.core.Keyword(null,"end-game?","end-game?",-146020529).cljs$core$IFn$_invoke$arity$1(state))){
-return null;
-} else {
-if(cljs.core.truth_((function (){var and__5000__auto__ = new cljs.core.Keyword(null,"board","board",-1907017633).cljs$core$IFn$_invoke$arity$1(state);
-if(cljs.core.truth_(and__5000__auto__)){
-return cljs.core.not.call(null,new cljs.core.Keyword(null,"game-over?","game-over?",432859304).cljs$core$IFn$_invoke$arity$1(state));
-} else {
-return and__5000__auto__;
-}
-})())){
-return tic_tac_toe.moves.corec.pick_move.call(null,state);
-} else {
-return tic_tac_toe.play_gamec.read_line.call(null);
-
-}
-}
-});
-cljs.core._add_method.call(null,tic_tac_toe.play_gamec.loop_game_play,new cljs.core.Keyword(null,"tui","tui",-1217057309),(function (state){
-while(true){
-tic_tac_toe.printablesc.print_formatted.call(null,new cljs.core.Keyword(null,"printables","printables",1718670765).cljs$core$IFn$_invoke$arity$1(state));
-
-var selection = tic_tac_toe.play_gamec.get_selection.call(null,state);
-var updated_state = tic_tac_toe.play_gamec.get_next_state.call(null,state,selection);
-if(cljs.core.truth_(new cljs.core.Keyword(null,"end-game?","end-game?",-146020529).cljs$core$IFn$_invoke$arity$1(state))){
-return null;
-} else {
-var G__11379 = updated_state;
-state = G__11379;
-continue;
-}
-break;
-}
-}));
 
 //# sourceMappingURL=play_gamec.js.map

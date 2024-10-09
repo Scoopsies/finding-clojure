@@ -4,7 +4,11 @@
             [reagent.dom :as rdom]
             [tic-tac-toe.printablesc :as printables]
             [tic-tac-toe.menu :as menu]
-            [tic-tac-toe.board :as board]))
+            [tic-tac-toe.board :as board]
+            [tic-tac-toe.moves.easyc]
+            [tic-tac-toe.moves.mediumc]
+            [tic-tac-toe.moves.hardc]
+            [tic-tac-toe.moves.replayc]))
 
 (def state (reagent/atom {:printables printables/player-x-printables}))
 

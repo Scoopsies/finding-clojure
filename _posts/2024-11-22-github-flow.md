@@ -97,10 +97,12 @@ for teams of any size.
 ### Best Practices for GitHub Flow
 
 #### 1.	Keep Branches Short-Lived:
-- Avoid long-running feature branches. Merge frequently to minimize conflicts and ensure you’re always working with the latest code.
+Avoid long-running feature branches. Merge frequently to minimize conflicts and ensure you’re always working with the 
+latest code.
 #### 2.	Automate Testing:
-- Use CI tools to catch bugs early. GitHub Actions, Jenkins, or CircleCI can automate tests on every PR and merge.
+Use CI tools to catch bugs early. GitHub Actions, Jenkins, or CircleCI can automate tests on every PR and merge.
 #### 3.	Communicate in Pull Requests:
-- Use descriptive commit messages and provide context in PR descriptions to make reviews easier.
+Use descriptive commit messages and provide context in PR descriptions to make reviews easier.
 #### 4.	Use Feature Flags:
-- Deploy unfinished features safely by wrapping them in feature flags, allowing you to merge incomplete work without exposing it to users.
+Deploy unfinished features safely by wrapping them in feature flags, allowing you to merge incomplete work without 
+exposing it to users.

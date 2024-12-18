@@ -12,8 +12,6 @@ Instead of buying everything upfront, lazy evaluation waits. It doesn’t “sho
 it. It’s like having a personal shopper who stands by, ready to grab the next item on your list only when you’re ready 
 for it. This saves time, avoids waste, and keeps your workspace (and memory) clean.
 
----
-
 ## So, What Exactly is Lazy Evaluation?
 
 **Lazy evaluation** is a programming strategy in which computations are postponed until their results are explicitly 
@@ -27,7 +25,7 @@ is never computed, saving both time and resources like CPU cycles and memory. At
 computations into placeholders or *thunks—functions* that encapsulate the delayed work, so the program can evaluate them 
 only when needed.
 
-#### Lazy evaluation shines in situations where:
+Lazy evaluation shines in situations where:
 - You’re working with large datasets and want to avoid wasteful computations.
 - You’re handling infinite sequences that can’t be processed upfront.
 - You need efficient memory usage without overloading resources.
@@ -48,8 +46,6 @@ exactly when you need it, without wasting time, memory, or effort.
 | Can work with infinite data structures | Limited to finite data structures    |
 
 Now that we've gone over what lazy evaluations are, lets learn a bit about how they work!
-
----
 
 ## How Do Lazy Evaluations Work Under the Hood?
 
@@ -81,7 +77,7 @@ Here is how you could create a thunk in Clojure:
 ;; Result: 42
 ```
 
-#### Here’s what’s happening:
+Here’s what’s happening:
 1.	The actual computation is wrapped inside a function (my-thunk).
 2.	The computation doesn’t run until you explicitly invoke my-thunk.
 
@@ -154,8 +150,6 @@ computations are performed just in time.
 Lazy evaluation puts you in control of when and how computations happen, ensuring your code is efficient, predictable, 
 and resource-friendly.
 
----
-
 ### Common Pitfalls
 
 Lazy evaluation is incredibly powerful, but even the best tools have trade-offs. Like that personal shopper we talked 
@@ -176,7 +170,7 @@ Lazy sequences can accumulate unevaluated work (thunks), leading to memory issue
 
 (sum-lazy (range 1e6)) ;; Potentially problematic
 ```
-##### In this case:
+In this case:
 - `map` creates a lazy sequence of incremented values.
 - `reduce` forces evaluation, but because map is lazy, it holds onto unevaluated thunks while traversing the list.
 - With a sequence as large as this, it can lead to high memory consumption.
@@ -213,8 +207,6 @@ To catch errors earlier, force evaluation of a small portion of the sequence dur
 ```clojure
 (doall (take 5 bad-seq)) ;; Forces evaluation, revealing the error early
 ```
-
-
 
 #### 3. Performance Overhead: Too Many Trips to the Store
 

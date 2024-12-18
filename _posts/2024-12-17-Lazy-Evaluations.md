@@ -25,7 +25,7 @@ is never computed, saving both time and resources like CPU cycles and memory. At
 computations into placeholders or *thunks—functions* that encapsulate the delayed work, so the program can evaluate them 
 only when needed.
 
-Lazy evaluation shines in situations where:
+**Lazy evaluation shines in situations where:**
 - You’re working with large datasets and want to avoid wasteful computations.
 - You’re handling infinite sequences that can’t be processed upfront.
 - You need efficient memory usage without overloading resources.
@@ -77,7 +77,7 @@ Here is how you could create a thunk in Clojure:
 ;; Result: 42
 ```
 
-Here’s what’s happening:
+**Here’s what’s happening:**
 1.	The actual computation is wrapped inside a function (my-thunk).
 2.	The computation doesn’t run until you explicitly invoke my-thunk.
 
@@ -97,13 +97,13 @@ Take a look at this infinite sequence of numbers:
 ;; => (1 2 3 4 5)
 ```
 
-Here’s what happens step by step:
+**Here’s what happens step by step:**
 1.	`lazy-seq` delays the creation of the rest of the sequence. It wraps the computation `((cons n (lazy-numbers (inc n))))`
 in a thunk.
 2.	`cons` constructs the sequence one value at a time.
 3.	When you call take, Clojure evaluates only as much of the sequence as necessary to satisfy the request.
 
-Under the hood, Clojure generates a chain of thunks:
+**Under the hood, Clojure generates a chain of thunks:**
 - lazy-numbers 1 → thunk for 1 and a delayed call to lazy-numbers 2.
 - lazy-numbers 2 → thunk for 2 and a delayed call to lazy-numbers 3.
 - And so on…
@@ -132,7 +132,7 @@ the thunk doesn’t have to run again.
 ```
 Here, cons repeatedly adds the value 1 to the sequence, while lazy-seq ensures we generate only as much as needed.
 
-#### In this example:
+**In this example:**
 1.	The thunk runs once when the value is first requested.
 2.	After computation, the result is cached (memoized). Further requests reuse the cached value instead of recomputing it.
 
@@ -170,7 +170,7 @@ Lazy sequences can accumulate unevaluated work (thunks), leading to memory issue
 
 (sum-lazy (range 1e6)) ;; Potentially problematic
 ```
-In this case:
+**In this case:**
 - `map` creates a lazy sequence of incremented values.
 - `reduce` forces evaluation, but because map is lazy, it holds onto unevaluated thunks while traversing the list.
 - With a sequence as large as this, it can lead to high memory consumption.
@@ -263,8 +263,6 @@ appropriate.
 By understanding these pitfalls and applying lazy evaluation intentionally, you can write code that is clean, 
 efficient, and predictable. With a thoughtful approach, you’ll take full advantage of laziness while avoiding its 
 downsides.
-
----
 
 ###  Smart Laziness: The Secret to Doing Less and Achieving More
 

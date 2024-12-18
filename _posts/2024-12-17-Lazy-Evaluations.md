@@ -1,4 +1,7 @@
-# Laziness is a Virtue: The Case for Lazy Evaluation
+---
+title: "Laziness is a Virtue: The Case for Lazy Evaluation"
+date: 2024-12-17
+---
 
 Imagine you’re cooking a new recipe. You read the first step: “Chop onions.” So, you hop on your bike, ride to the 
 store, and buy onions. Back home, you chop them and move to the next step: “Add tomatoes.” Off you go to the store 

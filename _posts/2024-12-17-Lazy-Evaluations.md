@@ -267,6 +267,8 @@ By understanding these pitfalls and applying lazy evaluation intentionally, you 
 efficient, and predictable. With a thoughtful approach, you’ll take full advantage of laziness while avoiding its 
 downsides.
 
+---
+
 ###  Smart Laziness: The Secret to Doing Less and Achieving More
 
 Lazy evaluation in Clojure is like having the ultimate grocery-shopping assistant. It fetches ingredients only when you 
